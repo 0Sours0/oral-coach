@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		172BFB00E8BCE31FBFCBC39D /* libPods-oralcoach.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FA1ED5038736C47DE002A8 /* libPods-oralcoach.a */; };
+		288498F614865541E421E095 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 55DECEECB6AAE52388748667 /* PrivacyInfo.xcprivacy */; };
+		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
+		A391D8CDEE47D2248B1397C3 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEA286032E84D14E4C7187E /* ExpoModulesProvider.swift */; };
+		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
+		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
+		F11748452D0722820044C1D9 /* NativeMigrationShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748432D0722820044C1D9 /* NativeMigrationShell.swift */; };
+		F1A742DD2FF000000044C1D9 /* VolcengineRealtimeDialogModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A742DC2FF000000044C1D9 /* VolcengineRealtimeDialogModule.m */; };
+		F1A742DE2FF000000044C1D9 /* aec.model in Resources */ = {isa = PBXBuildFile; fileRef = F1A742DF2FF000000044C1D9 /* aec.model */; };
+		F20001012D0800010044C1D9 /* NativeAppModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20002012D0800010044C1D9 /* NativeAppModels.swift */; };
+		F20001022D0800010044C1D9 /* NativeAppSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20002022D0800010044C1D9 /* NativeAppSchema.swift */; };
+		F20001032D0800010044C1D9 /* NativeSQLiteFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20002032D0800010044C1D9 /* NativeSQLiteFacade.swift */; };
+		F20001042D0800010044C1D9 /* NativeRepositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20002042D0800010044C1D9 /* NativeRepositories.swift */; };
+		F200010D2D0800010044C1D9 /* NativeAppTabRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200020D2D0800010044C1D9 /* NativeAppTabRootView.swift */; };
+		F20001102D0800010044C1D9 /* NativeAppShellState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20002102D0800010044C1D9 /* NativeAppShellState.swift */; };
+		F20001112D0800010044C1D9 /* NativeAppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20002112D0800010044C1D9 /* NativeAppRootView.swift */; };
+		F20001122D0800010044C1D9 /* ConversationComposerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20002122D0800010044C1D9 /* ConversationComposerView.swift */; };
+		F20001132D0800010044C1D9 /* ConversationFeatureDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20002132D0800010044C1D9 /* ConversationFeatureDependencies.swift */; };
+		F20001142D0800010044C1D9 /* ConversationFeatureModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20002142D0800010044C1D9 /* ConversationFeatureModels.swift */; };
+		F20001152D0800010044C1D9 /* ConversationFeatureRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20002152D0800010044C1D9 /* ConversationFeatureRootView.swift */; };
+		F20001162D0800010044C1D9 /* ConversationFeatureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20002162D0800010044C1D9 /* ConversationFeatureViewModel.swift */; };
+		F20001172D0800010044C1D9 /* ConversationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20002172D0800010044C1D9 /* ConversationHeaderView.swift */; };
+		F20001182D0800010044C1D9 /* ConversationMessageBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20002182D0800010044C1D9 /* ConversationMessageBubbleView.swift */; };
+		F20001192D0800010044C1D9 /* ConversationMessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20002192D0800010044C1D9 /* ConversationMessageListView.swift */; };
+		F200011A2D0800010044C1D9 /* ConversationModeSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200021A2D0800010044C1D9 /* ConversationModeSwitchView.swift */; };
+		F200011B2D0800010044C1D9 /* ConversationThreadStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200021B2D0800010044C1D9 /* ConversationThreadStore.swift */; };
+		F200011C2D0800010044C1D9 /* RealtimeCallConversationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200021C2D0800010044C1D9 /* RealtimeCallConversationViewModel.swift */; };
+		F200011D2D0800010044C1D9 /* VoiceMessageConversationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200021D2D0800010044C1D9 /* VoiceMessageConversationViewModel.swift */; };
+		F200011E2D0800010044C1D9 /* NativeRecordsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200021E2D0800010044C1D9 /* NativeRecordsModels.swift */; };
+		F200011F2D0800010044C1D9 /* NativeRecordsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200021F2D0800010044C1D9 /* NativeRecordsViewModel.swift */; };
+		F20001202D0800010044C1D9 /* NativeRecordsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20002202D0800010044C1D9 /* NativeRecordsScreen.swift */; };
+		F20001212D0800010044C1D9 /* NativeRecordDetailFeatureScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20002212D0800010044C1D9 /* NativeRecordDetailFeatureScreen.swift */; };
+		F20001222D0800010044C1D9 /* NativeSettingsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20002222D0800010044C1D9 /* NativeSettingsModels.swift */; };
+		F20001232D0800010044C1D9 /* NativeSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20002232D0800010044C1D9 /* NativeSettingsViewModel.swift */; };
+		F20001242D0800010044C1D9 /* NativeSettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20002242D0800010044C1D9 /* NativeSettingsScreen.swift */; };
+		F20001252D0800010044C1D9 /* NativeSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20002252D0800010044C1D9 /* NativeSettings.swift */; };
+		F20001262D0800010044C1D9 /* NativeConversationDTOs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20002262D0800010044C1D9 /* NativeConversationDTOs.swift */; };
+		F20001272D0800010044C1D9 /* NativePromptBuilders.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20002272D0800010044C1D9 /* NativePromptBuilders.swift */; };
+		F20001282D0800010044C1D9 /* NativeDeepSeekClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20002282D0800010044C1D9 /* NativeDeepSeekClient.swift */; };
+		F20001292D0800010044C1D9 /* NativeConversationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20002292D0800010044C1D9 /* NativeConversationServices.swift */; };
+		F200012A2D0800010044C1D9 /* NativeSpeechServiceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200022A2D0800010044C1D9 /* NativeSpeechServiceProtocols.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		13B07F961A680F5B00A75B9A /* oralcoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oralcoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = oralcoach/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = oralcoach/Info.plist; sourceTree = "<group>"; };
+		161B41FC1AAEC22C26E48511 /* Pods-oralcoach.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oralcoach.debug.xcconfig"; path = "Target Support Files/Pods-oralcoach/Pods-oralcoach.debug.xcconfig"; sourceTree = "<group>"; };
+		2388D9BBF4AB862A6B46A06A /* Pods-oralcoach.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oralcoach.release.xcconfig"; path = "Target Support Files/Pods-oralcoach/Pods-oralcoach.release.xcconfig"; sourceTree = "<group>"; };
+		3AEA286032E84D14E4C7187E /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-oralcoach/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		55DECEECB6AAE52388748667 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = oralcoach/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		A3FA1ED5038736C47DE002A8 /* libPods-oralcoach.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-oralcoach.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = oralcoach/SplashScreen.storyboard; sourceTree = "<group>"; };
+		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = oralcoach/AppDelegate.swift; sourceTree = "<group>"; };
+		F11748432D0722820044C1D9 /* NativeMigrationShell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NativeMigrationShell.swift; path = oralcoach/NativeMigrationShell.swift; sourceTree = "<group>"; };
+		F11748442D0722820044C1D9 /* oralcoach-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "oralcoach-Bridging-Header.h"; path = "oralcoach/oralcoach-Bridging-Header.h"; sourceTree = "<group>"; };
+		F1A742DC2FF000000044C1D9 /* VolcengineRealtimeDialogModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = VolcengineRealtimeDialogModule.m; path = oralcoach/VolcengineRealtimeDialogModule.m; sourceTree = "<group>"; };
+		F1A742DF2FF000000044C1D9 /* aec.model */ = {isa = PBXFileReference; lastKnownFileType = file; name = aec.model; path = oralcoach/aec.model; sourceTree = "<group>"; };
+		F20002012D0800010044C1D9 /* NativeAppModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NativeAppModels.swift; path = NativeAppModels.swift; sourceTree = "<group>"; };
+		F20002022D0800010044C1D9 /* NativeAppSchema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NativeAppSchema.swift; path = NativeAppSchema.swift; sourceTree = "<group>"; };
+		F20002032D0800010044C1D9 /* NativeSQLiteFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NativeSQLiteFacade.swift; path = NativeSQLiteFacade.swift; sourceTree = "<group>"; };
+		F20002042D0800010044C1D9 /* NativeRepositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NativeRepositories.swift; path = NativeRepositories.swift; sourceTree = "<group>"; };
+		F200020D2D0800010044C1D9 /* NativeAppTabRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NativeAppTabRootView.swift; path = NativeAppTabRootView.swift; sourceTree = "<group>"; };
+		F20002102D0800010044C1D9 /* NativeAppShellState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NativeAppShellState.swift; path = NativeAppShellState.swift; sourceTree = "<group>"; };
+		F20002112D0800010044C1D9 /* NativeAppRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NativeAppRootView.swift; path = NativeAppRootView.swift; sourceTree = "<group>"; };
+		F20002122D0800010044C1D9 /* ConversationComposerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConversationComposerView.swift; path = ConversationComposerView.swift; sourceTree = "<group>"; };
+		F20002132D0800010044C1D9 /* ConversationFeatureDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConversationFeatureDependencies.swift; path = ConversationFeatureDependencies.swift; sourceTree = "<group>"; };
+		F20002142D0800010044C1D9 /* ConversationFeatureModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConversationFeatureModels.swift; path = ConversationFeatureModels.swift; sourceTree = "<group>"; };
+		F20002152D0800010044C1D9 /* ConversationFeatureRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConversationFeatureRootView.swift; path = ConversationFeatureRootView.swift; sourceTree = "<group>"; };
+		F20002162D0800010044C1D9 /* ConversationFeatureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConversationFeatureViewModel.swift; path = ConversationFeatureViewModel.swift; sourceTree = "<group>"; };
+		F20002172D0800010044C1D9 /* ConversationHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConversationHeaderView.swift; path = ConversationHeaderView.swift; sourceTree = "<group>"; };
+		F20002182D0800010044C1D9 /* ConversationMessageBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConversationMessageBubbleView.swift; path = ConversationMessageBubbleView.swift; sourceTree = "<group>"; };
+		F20002192D0800010044C1D9 /* ConversationMessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConversationMessageListView.swift; path = ConversationMessageListView.swift; sourceTree = "<group>"; };
+		F200021A2D0800010044C1D9 /* ConversationModeSwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConversationModeSwitchView.swift; path = ConversationModeSwitchView.swift; sourceTree = "<group>"; };
+		F200021B2D0800010044C1D9 /* ConversationThreadStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConversationThreadStore.swift; path = ConversationThreadStore.swift; sourceTree = "<group>"; };
+		F200021C2D0800010044C1D9 /* RealtimeCallConversationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RealtimeCallConversationViewModel.swift; path = RealtimeCallConversationViewModel.swift; sourceTree = "<group>"; };
+		F200021D2D0800010044C1D9 /* VoiceMessageConversationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VoiceMessageConversationViewModel.swift; path = VoiceMessageConversationViewModel.swift; sourceTree = "<group>"; };
+		F200021E2D0800010044C1D9 /* NativeRecordsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NativeRecordsModels.swift; path = NativeRecordsModels.swift; sourceTree = "<group>"; };
+		F200021F2D0800010044C1D9 /* NativeRecordsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NativeRecordsViewModel.swift; path = NativeRecordsViewModel.swift; sourceTree = "<group>"; };
+		F20002202D0800010044C1D9 /* NativeRecordsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NativeRecordsScreen.swift; path = NativeRecordsScreen.swift; sourceTree = "<group>"; };
+		F20002212D0800010044C1D9 /* NativeRecordDetailFeatureScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NativeRecordDetailFeatureScreen.swift; path = NativeRecordDetailFeatureScreen.swift; sourceTree = "<group>"; };
+		F20002222D0800010044C1D9 /* NativeSettingsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NativeSettingsModels.swift; path = NativeSettingsModels.swift; sourceTree = "<group>"; };
+		F20002232D0800010044C1D9 /* NativeSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NativeSettingsViewModel.swift; path = NativeSettingsViewModel.swift; sourceTree = "<group>"; };
+		F20002242D0800010044C1D9 /* NativeSettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NativeSettingsScreen.swift; path = NativeSettingsScreen.swift; sourceTree = "<group>"; };
+		F20002252D0800010044C1D9 /* NativeSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NativeSettings.swift; path = NativeSettings.swift; sourceTree = "<group>"; };
+		F20002262D0800010044C1D9 /* NativeConversationDTOs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NativeConversationDTOs.swift; path = NativeConversationDTOs.swift; sourceTree = "<group>"; };
+		F20002272D0800010044C1D9 /* NativePromptBuilders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NativePromptBuilders.swift; path = NativePromptBuilders.swift; sourceTree = "<group>"; };
+		F20002282D0800010044C1D9 /* NativeDeepSeekClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NativeDeepSeekClient.swift; path = NativeDeepSeekClient.swift; sourceTree = "<group>"; };
+		F20002292D0800010044C1D9 /* NativeConversationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NativeConversationServices.swift; path = NativeConversationServices.swift; sourceTree = "<group>"; };
+		F200022A2D0800010044C1D9 /* NativeSpeechServiceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NativeSpeechServiceProtocols.swift; path = NativeSpeechServiceProtocols.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				172BFB00E8BCE31FBFCBC39D /* libPods-oralcoach.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13B07FAE1A68108700A75B9A /* oralcoach */ = {
+			isa = PBXGroup;
+			children = (
+				F11748412D0307B40044C1D9 /* AppDelegate.swift */,
+				F11748432D0722820044C1D9 /* NativeMigrationShell.swift */,
+				F20000012D0800010044C1D9 /* NativeApp */,
+				F1A742DC2FF000000044C1D9 /* VolcengineRealtimeDialogModule.m */,
+				F1A742DF2FF000000044C1D9 /* aec.model */,
+				F11748442D0722820044C1D9 /* oralcoach-Bridging-Header.h */,
+				BB2F792B24A3F905000567C9 /* Supporting */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
+				55DECEECB6AAE52388748667 /* PrivacyInfo.xcprivacy */,
+			);
+			name = oralcoach;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				A3FA1ED5038736C47DE002A8 /* libPods-oralcoach.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		45360D1BBA320639435B9614 /* oralcoach */ = {
+			isa = PBXGroup;
+			children = (
+				3AEA286032E84D14E4C7187E /* ExpoModulesProvider.swift */,
+			);
+			name = oralcoach;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* oralcoach */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				B5459E945DD34788F1C340FD /* Pods */,
+				FF3C19E9CB53250955547435 /* ExpoModulesProviders */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* oralcoach.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5459E945DD34788F1C340FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				161B41FC1AAEC22C26E48511 /* Pods-oralcoach.debug.xcconfig */,
+				2388D9BBF4AB862A6B46A06A /* Pods-oralcoach.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BB2F792B24A3F905000567C9 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				BB2F792C24A3F905000567C9 /* Expo.plist */,
+			);
+			name = Supporting;
+			path = oralcoach/Supporting;
+			sourceTree = "<group>";
+		};
+		F20000012D0800010044C1D9 /* NativeApp */ = {
+			isa = PBXGroup;
+			children = (
+				F20000052D0800010044C1D9 /* App */,
+				F20000022D0800010044C1D9 /* Domain */,
+				F20000032D0800010044C1D9 /* Persistence */,
+				F20000062D0800010044C1D9 /* Features */,
+				F200000A2D0800010044C1D9 /* Prompting */,
+				F200000B2D0800010044C1D9 /* Services */,
+				F20000042D0800010044C1D9 /* Views */,
+			);
+			path = oralcoach/NativeApp;
+			sourceTree = "<group>";
+		};
+		F20000022D0800010044C1D9 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				F20002012D0800010044C1D9 /* NativeAppModels.swift */,
+				F20002022D0800010044C1D9 /* NativeAppSchema.swift */,
+				F20002252D0800010044C1D9 /* NativeSettings.swift */,
+				F20002262D0800010044C1D9 /* NativeConversationDTOs.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		F20000032D0800010044C1D9 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				F20002032D0800010044C1D9 /* NativeSQLiteFacade.swift */,
+				F20002042D0800010044C1D9 /* NativeRepositories.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		F20000042D0800010044C1D9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F200020D2D0800010044C1D9 /* NativeAppTabRootView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F20000052D0800010044C1D9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F20002102D0800010044C1D9 /* NativeAppShellState.swift */,
+				F20002112D0800010044C1D9 /* NativeAppRootView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F20000062D0800010044C1D9 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				F20000072D0800010044C1D9 /* Conversation */,
+				F20000082D0800010044C1D9 /* Records */,
+				F20000092D0800010044C1D9 /* Settings */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		F20000072D0800010044C1D9 /* Conversation */ = {
+			isa = PBXGroup;
+			children = (
+				F20002122D0800010044C1D9 /* ConversationComposerView.swift */,
+				F20002132D0800010044C1D9 /* ConversationFeatureDependencies.swift */,
+				F20002142D0800010044C1D9 /* ConversationFeatureModels.swift */,
+				F20002152D0800010044C1D9 /* ConversationFeatureRootView.swift */,
+				F20002162D0800010044C1D9 /* ConversationFeatureViewModel.swift */,
+				F20002172D0800010044C1D9 /* ConversationHeaderView.swift */,
+				F20002182D0800010044C1D9 /* ConversationMessageBubbleView.swift */,
+				F20002192D0800010044C1D9 /* ConversationMessageListView.swift */,
+				F200021A2D0800010044C1D9 /* ConversationModeSwitchView.swift */,
+				F200021B2D0800010044C1D9 /* ConversationThreadStore.swift */,
+				F200021C2D0800010044C1D9 /* RealtimeCallConversationViewModel.swift */,
+				F200021D2D0800010044C1D9 /* VoiceMessageConversationViewModel.swift */,
+			);
+			path = Conversation;
+			sourceTree = "<group>";
+		};
+		F20000082D0800010044C1D9 /* Records */ = {
+			isa = PBXGroup;
+			children = (
+				F200021E2D0800010044C1D9 /* NativeRecordsModels.swift */,
+				F200021F2D0800010044C1D9 /* NativeRecordsViewModel.swift */,
+				F20002202D0800010044C1D9 /* NativeRecordsScreen.swift */,
+				F20002212D0800010044C1D9 /* NativeRecordDetailFeatureScreen.swift */,
+			);
+			path = Records;
+			sourceTree = "<group>";
+		};
+		F20000092D0800010044C1D9 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F20002222D0800010044C1D9 /* NativeSettingsModels.swift */,
+				F20002232D0800010044C1D9 /* NativeSettingsViewModel.swift */,
+				F20002242D0800010044C1D9 /* NativeSettingsScreen.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F200000A2D0800010044C1D9 /* Prompting */ = {
+			isa = PBXGroup;
+			children = (
+				F20002272D0800010044C1D9 /* NativePromptBuilders.swift */,
+			);
+			path = Prompting;
+			sourceTree = "<group>";
+		};
+		F200000B2D0800010044C1D9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F20002282D0800010044C1D9 /* NativeDeepSeekClient.swift */,
+				F20002292D0800010044C1D9 /* NativeConversationServices.swift */,
+				F200022A2D0800010044C1D9 /* NativeSpeechServiceProtocols.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FF3C19E9CB53250955547435 /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				45360D1BBA320639435B9614 /* oralcoach */,
+			);
+			name = ExpoModulesProviders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13B07F861A680F5B00A75B9A /* oralcoach */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "oralcoach" */;
+			buildPhases = (
+				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
+				F786FECB3BF92E057B2B8720 /* [Expo] Configure project */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
+				458AC1C82A1469EDDEFE5B01 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = oralcoach;
+			productName = oralcoach;
+			productReference = 13B07F961A680F5B00A75B9A /* oralcoach.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				TargetAttributes = {
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1250;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "oralcoach" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* oralcoach */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
+				288498F614865541E421E095 /* PrivacyInfo.xcprivacy in Resources */,
+				F1A742DE2FF000000044C1D9 /* aec.model in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env",
+				"$(SRCROOT)/.xcode.env.local",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -f \"$PODS_ROOT/../.xcode.env\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env\"\nfi\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n# The project root by default is one level up from the ios directory\nexport PROJECT_ROOT=\"$PROJECT_DIR\"/..\n\nif [[ \"$CONFIGURATION\" = *Debug* ]]; then\n  export SKIP_BUNDLING=1\nfi\nif [[ -z \"$ENTRY_FILE\" ]]; then\n  # Set the entry JS file using the bundler's entry resolution.\n  export ENTRY_FILE=\"$(\"$NODE_BINARY\" -e \"require('expo/scripts/resolveAppEntry')\" \"$PROJECT_ROOT\" ios absolute | tail -n 1)\"\nfi\n\nif [[ -z \"$CLI_PATH\" ]]; then\n  # Use Expo CLI\n  export CLI_PATH=\"$(\"$NODE_BINARY\" --print \"require.resolve('@expo/cli', { paths: [require.resolve('expo/package.json')] })\")\"\nfi\nif [[ -z \"$BUNDLE_COMMAND\" ]]; then\n  # Default Expo CLI command for bundling\n  export BUNDLE_COMMAND=\"export:embed\"\nfi\n\n# Source .xcode.env.updates if it exists to allow\n# SKIP_BUNDLING to be unset if needed\nif [[ -f \"$PODS_ROOT/../.xcode.env.updates\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.updates\"\nfi\n# Source local changes to allow overrides\n# if needed\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n`\"$NODE_BINARY\" --print \"require('path').dirname(require.resolve('react-native/package.json')) + '/scripts/react-native-xcode.sh'\"`\n\n";
+		};
+		08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-oralcoach-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		458AC1C82A1469EDDEFE5B01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-oralcoach/Pods-oralcoach-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/React-Core-prebuilt/React.framework/React",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/ReactNativeDependencies/ReactNativeDependencies.framework/ReactNativeDependencies",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactNativeDependencies.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-oralcoach/Pods-oralcoach-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-oralcoach/Pods-oralcoach-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/EXConstants.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/ExpoConstants_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/ExpoFileSystem/ExpoFileSystem_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RNCAsyncStorage/RNCAsyncStorage_resources.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/React-Core_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-cxxreact/React-cxxreact_privacy.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXConstants.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoConstants_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoFileSystem_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RNCAsyncStorage_resources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/React-Core_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/React-cxxreact_privacy.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-oralcoach/Pods-oralcoach-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F786FECB3BF92E057B2B8720 /* [Expo] Configure project */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env",
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/oralcoach/oralcoach.entitlements",
+				"$(SRCROOT)/Pods/Target Support Files/Pods-oralcoach/expo-configure-project.sh",
+			);
+			name = "[Expo] Configure project";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/Pods/Target Support Files/Pods-oralcoach/ExpoModulesProvider.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-oralcoach/expo-configure-project.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */,
+				F20001012D0800010044C1D9 /* NativeAppModels.swift in Sources */,
+				F20001022D0800010044C1D9 /* NativeAppSchema.swift in Sources */,
+				F20001032D0800010044C1D9 /* NativeSQLiteFacade.swift in Sources */,
+				F20001042D0800010044C1D9 /* NativeRepositories.swift in Sources */,
+				F200010D2D0800010044C1D9 /* NativeAppTabRootView.swift in Sources */,
+				F20001102D0800010044C1D9 /* NativeAppShellState.swift in Sources */,
+				F20001112D0800010044C1D9 /* NativeAppRootView.swift in Sources */,
+				F20001122D0800010044C1D9 /* ConversationComposerView.swift in Sources */,
+				F20001132D0800010044C1D9 /* ConversationFeatureDependencies.swift in Sources */,
+				F20001142D0800010044C1D9 /* ConversationFeatureModels.swift in Sources */,
+				F20001152D0800010044C1D9 /* ConversationFeatureRootView.swift in Sources */,
+				F20001162D0800010044C1D9 /* ConversationFeatureViewModel.swift in Sources */,
+				F20001172D0800010044C1D9 /* ConversationHeaderView.swift in Sources */,
+				F20001182D0800010044C1D9 /* ConversationMessageBubbleView.swift in Sources */,
+				F20001192D0800010044C1D9 /* ConversationMessageListView.swift in Sources */,
+				F200011A2D0800010044C1D9 /* ConversationModeSwitchView.swift in Sources */,
+				F200011B2D0800010044C1D9 /* ConversationThreadStore.swift in Sources */,
+				F200011C2D0800010044C1D9 /* RealtimeCallConversationViewModel.swift in Sources */,
+				F200011D2D0800010044C1D9 /* VoiceMessageConversationViewModel.swift in Sources */,
+				F200011E2D0800010044C1D9 /* NativeRecordsModels.swift in Sources */,
+				F200011F2D0800010044C1D9 /* NativeRecordsViewModel.swift in Sources */,
+				F20001202D0800010044C1D9 /* NativeRecordsScreen.swift in Sources */,
+				F20001212D0800010044C1D9 /* NativeRecordDetailFeatureScreen.swift in Sources */,
+				F20001222D0800010044C1D9 /* NativeSettingsModels.swift in Sources */,
+				F20001232D0800010044C1D9 /* NativeSettingsViewModel.swift in Sources */,
+				F20001242D0800010044C1D9 /* NativeSettingsScreen.swift in Sources */,
+				F20001252D0800010044C1D9 /* NativeSettings.swift in Sources */,
+				F20001262D0800010044C1D9 /* NativeConversationDTOs.swift in Sources */,
+				F20001272D0800010044C1D9 /* NativePromptBuilders.swift in Sources */,
+				F20001282D0800010044C1D9 /* NativeDeepSeekClient.swift in Sources */,
+				F20001292D0800010044C1D9 /* NativeConversationServices.swift in Sources */,
+				F200012A2D0800010044C1D9 /* NativeSpeechServiceProtocols.swift in Sources */,
+				F11748452D0722820044C1D9 /* NativeMigrationShell.swift in Sources */,
+				F1A742DD2FF000000044C1D9 /* VolcengineRealtimeDialogModule.m in Sources */,
+				A391D8CDEE47D2248B1397C3 /* ExpoModulesProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 161B41FC1AAEC22C26E48511 /* Pods-oralcoach.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = oralcoach/oralcoach.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z2AM52PGBQ;
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"FB_SONARKIT_ENABLED=1",
+				);
+				INFOPLIST_FILE = oralcoach/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.oralcoach;
+				PRODUCT_NAME = oralcoach;
+				SWIFT_OBJC_BRIDGING_HEADER = "oralcoach/oralcoach-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2388D9BBF4AB862A6B46A06A /* Pods-oralcoach.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = oralcoach/oralcoach.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z2AM52PGBQ;
+				INFOPLIST_FILE = oralcoach/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.oralcoach;
+				PRODUCT_NAME = oralcoach;
+				SWIFT_OBJC_BRIDGING_HEADER = "oralcoach/oralcoach-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/swift\"$(inherited)\"";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_ENABLE_EXPLICIT_MODULES = NO;
+				USE_HERMES = true;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/swift\"$(inherited)\"";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				SWIFT_ENABLE_EXPLICIT_MODULES = NO;
+				USE_HERMES = true;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "oralcoach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "oralcoach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}
